@@ -1,0 +1,256 @@
+/* font-family: 'Crete Round', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Vollkorn', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Crete Round", serif;
+}
+
+.signup-input {
+    position: relative;
+}
+
+.eye-icon1 {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.eye-icon2 {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.eye-icon3 {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgb(238, 238, 238);
+    transition: all 0.3s ease-in;
+}
+
+.icon.facebook {
+    color: #3b5998;
+}
+.icon.google {
+    color: #db4a39;
+}
+.icon.github {
+    color: #000000;
+}
+
+.icon.facebook:hover {
+    color: rgb(255, 255, 255);
+    background-color: #3b5998;
+}
+.icon.google:hover {
+    color: rgb(255, 255, 255);
+    background-color: #db4a39;
+}
+.icon.github:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+.ticker-box {
+    border: 2px solid rgb(95, 95, 95);
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.ticker-label {
+    background-color: rgb(112, 112, 112);
+    color: white;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-ticker {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-img-overlay:hover {
+    background-color: transparent;
+}
+.description {
+    font-size: 0.8rem;
+}
+
+.icon-box > span,
+.update-text {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+.icon-box-sm > span {
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+}
+
+.header-news-tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: rgba(178, 169, 0, 0.748);
+    border-radius: 3px;
+    width: 80px;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-news-tag-sm {
+    font-size: 0.7rem;
+    font-weight: 500;
+    background-color: rgba(178, 169, 0, 0.748);
+    border-radius: 3px;
+    width: 60px;
+    padding: 2px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-tag-sm {
+    font-size: 0.6rem;
+    font-weight: 500;
+    background-color: rgba(178, 169, 0, 0.748);
+    border-radius: 3px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-advertisement {
+    height: 200px;
+}
+.home-advertisement-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+span{
+
+    background-color:#f44336;
+    background-color:#E91E63;
+    background-color:#9C27B0;
+    background-color:#673AB7;
+    background-color:#3F51B5;
+    background-color:#2196F3;
+    background-color:#03A9F4;
+    background-color:#00BCD4;
+    background-color:#009688;
+    background-color:#4CAF50;
+    background-color:#8BC34A;
+    background-color:#CDDC39;
+    background-color:#FFC107;
+    background-color:#FF9800;
+    background-color:#FF5722;
+} */
+
+/* Dashboard  */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(70, 86, 102);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #b1b1b1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+}
+
+#down-icon {
+    transition: all 0.4s;
+}
+
+.left-icon {
+    transform: rotateZ(-90deg);
+}
+.down-icon {
+    transform: rotateZ(0);
+}
+
+.chart {
+    height: 400px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.dashboard-nav-item {
+    font-size: 1rem;
+}
