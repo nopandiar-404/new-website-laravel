@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## How to Install
+
+1. Download Project/Clone
+2. Masukkan file ke dalam htdocs 
+3. Sudah terinstall Composer
+4. Buka CMD masuk ke projek anda
+5. Jalan kan command "composer update" tunggu sampai selesai
+6. Rename env.example menjadi .env
+7. Jalan kan command "php artisan key:generate" tunggu sampai selesai
+8. Selesai
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
